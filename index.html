@@ -1,112 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ebin Thomas | Software Engineer</title>
+
+    <meta name="description"
+        content="Portfolio of Ebin Thomas - Computer Science Undergraduate at IIIT Kottayam, Full Stack Developer and AI Enthusiast.">
+
+    <meta name="keywords"
+        content="Ebin Thomas, Portfolio, IIIT Kottayam, Full Stack Developer, React, Node.js, AI">
+
+    <meta name="author" content="Ebin Thomas">
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body class="bg-slate-950 text-white">
-    <header class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur border-b border-slate-800">
-      <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <h1 class="text-2xl font-bold text-cyan-400">MyPortfolio</h1>
+    <link rel="stylesheet" href="styles.css">
 
-        <ul class="flex gap-6 text-sm md:text-base">
-          <li><a href="#hero" class="hover:text-cyan-400">Home</a></li>
-          <li><a href="#about" class="hover:text-cyan-400">About</a></li>
-          <li><a href="#projects" class="hover:text-cyan-400">Projects</a></li>
-          <li><a href="#contact" class="hover:text-cyan-400">Contact</a></li>
-        </ul>
-      </nav>
+</head>
+
+<body class="bg-slate-950 text-white scroll-smooth">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header
+        class="fixed top-0 left-0 right-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800">
+
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+            <!-- Logo -->
+
+            <a href="#hero" class="text-2xl font-bold">
+
+                <span class="text-cyan-400">Ebin</span> Thomas
+
+            </a>
+
+            <!-- Desktop Menu -->
+
+            <ul class="hidden md:flex items-center gap-8 text-slate-300 font-medium">
+
+                <li>
+                    <a href="#hero" class="hover:text-cyan-400 transition">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about" class="hover:text-cyan-400 transition">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#projects" class="hover:text-cyan-400 transition">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="hover:text-cyan-400 transition">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
     </header>
 
-    <section id="hero" class="min-h-screen flex items-center justify-center px-6">
-      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-            Hi, I'm <span class="text-cyan-400">Your Name</span>
-          </h1>
+    <!-- ================= HERO ================= -->
 
-          <p class="text-slate-300 text-lg mb-8">
-            Aspiring Web Developer passionate about building beautiful and responsive websites.
-          </p>
+    <main class="pt-20">
 
-          <div class="flex gap-4">
-            <a href="#projects" class="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold">
-              View Projects
-            </a>
+        <div id="hero-section"></div>
 
-            <a href="#contact" class="border border-cyan-400 text-cyan-400 px-6 py-3 rounded-xl">
-              Contact Me
-            </a>
-          </div>
+        <!-- ================= ABOUT ================= -->
+
+        <div id="about-section"></div>
+
+        <!-- ================= PROJECTS ================= -->
+
+        <div id="projects-section"></div>
+
+        <!-- ================= CONTACT ================= -->
+
+        <div id="contact-section"></div>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="border-t border-slate-800 py-8">
+
+        <div class="max-w-7xl mx-auto px-6 text-center">
+
+            <p class="text-slate-500">
+
+                © 2026 Ebin Thomas. All Rights Reserved.
+
+            </p>
+
+            <p class="text-slate-600 mt-2 text-sm">
+
+                Built with HTML, Tailwind CSS & JavaScript
+
+            </p>
+
         </div>
 
-        <div class="flex justify-center">
-          <img
-            src="assets/profile-placeholder.jpg"
-            alt="Profile"
-            class="w-72 h-72 object-cover rounded-full border-4 border-cyan-400 shadow-2xl"
-          />
-        </div>
-      </div>
-    </section>
+    </footer>
 
-    <section id="about" class="py-24 px-6 bg-slate-900">
-      <div class="max-w-5xl mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-8 text-cyan-400">About Me</h2>
+    <!-- ================= SCRIPTS ================= -->
 
-        <p class="text-slate-300 text-lg leading-8 max-w-3xl mx-auto">
-          I enjoy creating modern websites using HTML, CSS, and Tailwind CSS.
-        </p>
-      </div>
-    </section>
+    <script src="script.js"></script>
 
-    <section id="projects" class="py-24 px-6">
-      <div class="max-w-6xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-14 text-cyan-400">
-          Projects
-        </h2>
+</body>
 
-        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden">
-            <img src="assets/project-1.png" alt="Project" class="w-full h-52 object-cover" />
-
-            <div class="p-6">
-              <h3 class="text-2xl font-semibold mb-3">Project One</h3>
-
-              <p class="text-slate-400 mb-4">
-                A responsive website built using HTML, CSS, and Tailwind.
-              </p>
-
-              <a href="#" class="text-cyan-400 hover:underline">
-                View Project
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="py-24 px-6 bg-slate-900">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-12 text-cyan-400">
-          Contact Me
-        </h2>
-
-        <form class="space-y-6">
-          <input type="text" placeholder="Name" class="w-full px-4 py-3 rounded-xl bg-slate-800" />
-          <input type="email" placeholder="Email" class="w-full px-4 py-3 rounded-xl bg-slate-800" />
-          <textarea rows="5" placeholder="Message" class="w-full px-4 py-3 rounded-xl bg-slate-800"></textarea>
-
-          <button type="submit" class="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold">
-            Send Message
-          </button>
-        </form>
-      </div>
-    </section>
-  </body>
 </html>
